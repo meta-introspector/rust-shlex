@@ -16,7 +16,7 @@ categories = [
     "command-line-interface",
     "parser-implementations"
 ]
-rust-version = "1.46.0"
+# rust-version = "1.46.0"
 
 [features]
 std = []

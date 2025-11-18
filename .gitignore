@@ -6,3 +6,4 @@ corpus/
 **/*.rs.bk
 .*.sw?
 .sw?
+process-repo.log

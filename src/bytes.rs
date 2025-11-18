@@ -350,7 +350,8 @@ fn double_quoted_ok(c: u8) -> bool {
 ///
 /// Precondition: input size is nonzero.  (Empty strings are handled by the caller.)
 /// Postcondition: returned size is nonzero.
-#[cfg_attr(manual_codegen_check, inline(never))]
+// manual_codegen_check,
+#[inline(never)]
 fn quoting_strategy(in_bytes: &[u8]) -> (usize, QuotingStrategy) {
     const UNQUOTED_OK: u8 = 1;
     const SINGLE_QUOTED_OK: u8 = 2;
